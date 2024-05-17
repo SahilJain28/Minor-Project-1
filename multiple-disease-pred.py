@@ -18,12 +18,11 @@ def lottie_loader(url):
     return r.json()
 
 # loading the saved models
-# C:\Users\Shivansh\OneDrive\Desktop\preddisease\saved models\diabetes_model.sav
-diabetes_model = pickle.load(open('C:/Users/Sahil/OneDrive/Desktop/preddisease/saved models/diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open('https://drive.google.com/file/d/1ULVoOEbLSzy3BkWMqUQCBkQA2tggmR_V/view?usp=drive_link'))
 
-heart_disease_model = pickle.load(open('C:/Users/Sahil/OneDrive/Desktop/preddisease/saved models/heart_disease_model.sav','rb'))
+heart_disease_model = pickle.load(open('https://drive.google.com/file/d/1baXYstzkGvUaPQRCZRipnxUKPsdK0FgW/view?usp=drive_link'))
 
-parkinsons_model = pickle.load(open('C:/Users/Sahil/OneDrive/Desktop/preddisease/saved models/parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('https://drive.google.com/file/d/1F7bxs345eN2km1FOcF4Fk36KZ2AuRE-L/view?usp=drive_link'))
 
 
 def classify(image, model, class_names):
