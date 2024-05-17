@@ -18,11 +18,11 @@ def lottie_loader(url):
     return r.json()
 
 # loading the saved models
-diabetes_model = pickle.load(open('https://drive.google.com/file/d/1ULVoOEbLSzy3BkWMqUQCBkQA2tggmR_V/view?usp=drive_link'))
+diabetes_model = pickle.load(open('https://drive.google.com/file/d/1ULVoOEbLSzy3BkWMqUQCBkQA2tggmR_V/view?usp=drive_link',"rb"))
 
-heart_disease_model = pickle.load(open('https://drive.google.com/file/d/1baXYstzkGvUaPQRCZRipnxUKPsdK0FgW/view?usp=drive_link'))
+heart_disease_model = pickle.load(open('https://drive.google.com/file/d/1baXYstzkGvUaPQRCZRipnxUKPsdK0FgW/view?usp=drive_link',"rb"))
 
-parkinsons_model = pickle.load(open('https://drive.google.com/file/d/1F7bxs345eN2km1FOcF4Fk36KZ2AuRE-L/view?usp=drive_link'))
+parkinsons_model = pickle.load(open('https://drive.google.com/file/d/1F7bxs345eN2km1FOcF4Fk36KZ2AuRE-L/view?usp=drive_link',"rb"))
 
 
 def classify(image, model, class_names):
